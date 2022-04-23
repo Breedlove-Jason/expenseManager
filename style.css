@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+
+#expenseList{
+    width: 25%;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    /*border-radius: 3px;*/
+    border: 1px solid;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thType{
+    width: 5px;
+    border: 1px solid;
+    padding: 3px;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+#thName{
+    width: 5px;
+    border: 1px solid;
+    padding: 3px;
+    text-align: left;
+    background-color: #f5f7fa;
+}
+
+#thDate{
+    width: 5px;
+    border: 1px solid;
+    padding: 3px;
+    text-align: left;
+    background-color: #f5f7fa;
+}
+#thAmount{
+    width: 5px;
+    border: 1px solid;
+    padding: 3px;
+    text-align: right;
+    background-color: #f5f7fa;
+}
