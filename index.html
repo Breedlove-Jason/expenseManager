@@ -7,16 +7,40 @@
 </head>
 <body>
 <h1>Simple Expense Manager Project</h1>
-<div id="tableDiv">
+<form id="entryForm">
+    <table id="entryTable">
+    <tr>
+        <td>
+            <select id="typeList" name="typeList">
+                <option value="Card">Card</option>
+                <option value="Cash">Cash</option>
+                <option value="Cryptocurrency">Cryptocurrency</option>
+                <option value="Other">Other</option>
+            </select>
+        </td>
+        <td><input type="text" id="spentOn" placeholder="What did you spend on?"/></td>
+    </tr>
+        <tr>
+            <td><input type="date" id="spentDate" min="1900-01-01" max="2200-01-01" /> </td>
+            <td><input type="number" id="spentAmount" placeholder="How much?"/></td>
+        </tr>
+    </table>
+    <div id="placeButton">
+    <input type="submit" id="addExpense" value="Add expense"/>
+    </div>
+</form>
+<br>
+<br>
+<br>
 <table id="expenseList">
     <tr>
-    <th id="thType">type</th>
-        <th id="thName">name</th>
-        <th id="thDate">date</th>
-        <th id="thAmount">amount</th>
+    <th class="tHeaders">type</th>
+        <th class="tHeaders">name</th>
+        <th class="tHeaders">date</th>
+        <th class="tHeaders">amount</th>
     </tr>
 </table>
-</div>
+
 <script src="script.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@ h1{
     text-align: center;
 }
 
+body{
+    background-color: #c7eef5;
+}
+
 #expenseList{
     width: 25%;
     border-collapse: collapse;
@@ -13,33 +17,56 @@ h1{
     margin-right: auto;
 }
 
-#thType{
-    width: 5px;
-    border: 1px solid;
+.tHeaders{
+    /*width: 3px;*/
+    border: 3px solid #FFFFFF;
     padding: 3px;
     text-align: center;
     background-color: #f5f7fa;
 }
 
-#thName{
-    width: 5px;
-    border: 1px solid;
-    padding: 3px;
+
+#entryForm{
+    width: 25%;
+    border-collapse: collapse;
+    /*border-spacing: 5px;*/
+    /*border-radius: 3px;*/
+    /*border: 1px solid;*/
     text-align: left;
-    background-color: #f5f7fa;
+    margin-left: auto;
+    margin-right: auto;
+}
+#entryTable{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-#thDate{
-    width: 5px;
+#typeList{
+    border-collapse: separate;
+    border-spacing: 10px;
+    /*border-radius: 3px;*/
     border: 1px solid;
-    padding: 3px;
     text-align: left;
-    background-color: #f5f7fa;
 }
-#thAmount{
-    width: 5px;
+
+#addExpense{
+    background-color: #a0d468;
     border: 1px solid;
-    padding: 3px;
-    text-align: right;
-    background-color: #f5f7fa;
+    border-radius: 10px;
+    width: 175px;
+    padding: 12px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+}
+#placeButton{
+    padding:30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
