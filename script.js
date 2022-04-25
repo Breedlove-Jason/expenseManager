@@ -22,48 +22,50 @@ function addExpense(event) {
 
         document.forms[0].reset();
     });
-    const table = document.getElementById('expenseList')
-    const tr = document.createElement('tr');
-    const tableRow = table.appendChild(tr);
-    const td = document.createElement('td');
-    td.innerHTML = expense[2];
-    const tableData = tableRow.appendChild(td);
-
+    for(let i = 0; i < expense.length; i++) {
+        const table = document.getElementById('expenseList')
+        const tr = document.createElement('tr');
+        for (let j = 0; j < expense.length; j++) {
+            // const table = document.getElementById('expenseList')
+            // const tr = document.createElement('tr');
+            const tableRow = table.appendChild(tr);
+            const td = document.createElement('td');
+            td.innerHTML = expense[j];
+            const tableData = tableRow.appendChild(td);
+        }
+    }
+    expense = [];
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('addExpense').addEventListener('click', addExpense)
 });
-console.log(expense);
+// console.log(expense);
 // for(let i = 0; i < expense.length; i++){
 //     console.log(expense[i])
 // }
-// object.values then iterate through the values
+
 
 // add a new table row and 4 td fields for each entry
-const table = document.getElementById('expenseList')
-const tr = document.createElement('tr');
-const tableRow = table.appendChild(tr);
-const td = document.createElement('td');
-td.innerHTML = expense[0];
-const tableData = tableRow.appendChild(td);
-console.log(tableData);
-for (let i = 0; i < expense.length; i++) {
-    const table = document.getElementById('expenseList')
-    const tr = document.createElement('tr');
-    const tableRow = table.appendChild(tr);
-    const td = document.createElement('td');
-    const tableData = tableRow.appendChild(td);
-    td.innerHTML = expense[i].type;
-    tr.appendChild(td);
-    const td2 = document.createElement('td');
-    td2.innerHTML = expense[i].spent;
-    tr.appendChild(td2);
-    const td3 = document.createElement('td');
-    td3.innerHTML = expense[i].date;
-    tr.appendChild(td3);
-    const td4 = document.createElement('td');
-    td4.innerHTML = expense[i].amount;
-    tr.appendChild(td4);
-}
+// const tableData = tableRow.appendChild(td);
+// console.log(tableData);
+// for (let i = 0; i < expense.length; i++) {
+//     const table = document.getElementById('expenseList')
+//     const tr = document.createElement('tr');
+//     const tableRow = table.appendChild(tr);
+//     const td = document.createElement('td');
+//     td.innerHTML = expense[i];
+//     console.log(td);
+//     const tableData = tableRow.appendChild(td);
+    // tr.appendChild(td);
+    // const td2 = document.createElement('td');
+    // td2.innerHTML = expense[i].spent;
+    // tr.appendChild(td2);
+    // const td3 = document.createElement('td');
+    // td3.innerHTML = expense[i].date;
+    // tr.appendChild(td3);
+    // const td4 = document.createElement('td');
+    // td4.innerHTML = expense[i].amount;
+    // tr.appendChild(td4);
+// }
 // delete an entry
