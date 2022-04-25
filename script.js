@@ -6,7 +6,7 @@ function addExpense(event) {
     event.preventDefault();
 
     const entry = {
-        id: Date.now(),
+        // id: Date.now(),
         type: document.getElementById('typeList').value,
         spent: document.getElementById('spentOn').value,
         date: document.getElementById('spentDate').value,
@@ -22,7 +22,7 @@ function addExpense(event) {
 
         document.forms[0].reset();
     });
-    for(let i = 0; i < expense.length; i++) {
+    for(let i = 0; i < 1; i++) {
         const table = document.getElementById('expenseList')
         const tr = document.createElement('tr');
         for (let j = 0; j < expense.length; j++) {
