@@ -19,8 +19,16 @@ function addExpense(event) {
         // console.log(element);
 
         // console.log(expense);
+
         document.forms[0].reset();
     });
+    const table = document.getElementById('expenseList')
+    const tr = document.createElement('tr');
+    const tableRow = table.appendChild(tr);
+    const td = document.createElement('td');
+    td.innerHTML = expense[2];
+    const tableData = tableRow.appendChild(td);
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -33,12 +41,19 @@ console.log(expense);
 // object.values then iterate through the values
 
 // add a new table row and 4 td fields for each entry
-
-
-document.createElement('tr');
+const table = document.getElementById('expenseList')
+const tr = document.createElement('tr');
+const tableRow = table.appendChild(tr);
+const td = document.createElement('td');
+td.innerHTML = expense[0];
+const tableData = tableRow.appendChild(td);
+console.log(tableData);
 for (let i = 0; i < expense.length; i++) {
+    const table = document.getElementById('expenseList')
     const tr = document.createElement('tr');
+    const tableRow = table.appendChild(tr);
     const td = document.createElement('td');
+    const tableData = tableRow.appendChild(td);
     td.innerHTML = expense[i].type;
     tr.appendChild(td);
     const td2 = document.createElement('td');
@@ -50,6 +65,5 @@ for (let i = 0; i < expense.length; i++) {
     const td4 = document.createElement('td');
     td4.innerHTML = expense[i].amount;
     tr.appendChild(td4);
-    document.getElementById('expenseTable').appendChild(tr);
 }
 // delete an entry
