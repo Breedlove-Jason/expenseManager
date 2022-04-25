@@ -35,6 +35,7 @@ function addExpense(event) {
             // const tr = document.createElement('tr');
             const tableRow = table.appendChild(tr);
             const td = document.createElement('TD');
+            td.className = 'entries'
             td.innerHTML = expense[j];
             const tableData = tableRow.appendChild(td);
         }
@@ -45,3 +46,4 @@ function addExpense(event) {
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('addExpense').addEventListener('click', addExpense)
 });
+
