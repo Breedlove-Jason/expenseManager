@@ -70,3 +70,27 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.deleteButton{
+    background-color: red;
+    color: white;
+    border-color: red;
+    padding: 1px 7px 1px 7px;
+    border-radius: 50%;
+    font-size: .8em
+}
+
+#tDelete{
+    border: none;
+    text-align: center;
+    background-color: red;
+}
+
+#expenseList{
+    width: 25%;
+    border-spacing: 5px;
+    border: 8px inset #a0d468 ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+}
