@@ -68,7 +68,7 @@ body{
     padding: 5px;
 }
 
-.addExpense{
+#addExpense{
     background-color: #a0d468;
     border: 1px solid;
     border-radius: 10px;
@@ -82,15 +82,15 @@ body{
     font-size: 1.2em;
     transition-duration: 0.4s;
 }
+#addExpense:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
 .centerButton {
     padding: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-.addExpense:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
 }
 .deleteButton{
     background-color: red;
